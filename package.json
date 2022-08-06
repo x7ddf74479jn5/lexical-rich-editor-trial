@@ -9,17 +9,25 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lexical/code": "0.3.8",
+    "@lexical/list": "0.3.8",
+    "@lexical/markdown": "0.3.8",
     "@lexical/react": "0.3.8",
+    "@lexical/rich-text": "0.3.8",
+    "@lexical/selection": "0.3.8",
+    "@lexical/utils": "0.3.8",
     "lexical": "0.3.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "4.4.0",
+    "ress": "5.0.2",
     "sass": "1.54.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "prettier": "2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
   }

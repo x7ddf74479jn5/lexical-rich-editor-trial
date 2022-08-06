@@ -1,30 +1,46 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@lexical/code': 0.3.8
+  '@lexical/list': 0.3.8
+  '@lexical/markdown': 0.3.8
   '@lexical/react': 0.3.8
+  '@lexical/rich-text': 0.3.8
+  '@lexical/selection': 0.3.8
+  '@lexical/utils': 0.3.8
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.0
   lexical: 0.3.8
+  prettier: 2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-icons: 4.4.0
+  ress: 5.0.2
   sass: 1.54.3
   typescript: ^4.6.4
   vite: ^3.0.0
 
 dependencies:
+  '@lexical/code': 0.3.8_lexical@0.3.8
+  '@lexical/list': 0.3.8_lexical@0.3.8
+  '@lexical/markdown': 0.3.8_zusmaiylaflyl2esdbbbls6nfq
   '@lexical/react': 0.3.8_upa37nfcsl2xercqyjwb3rbbxu
+  '@lexical/rich-text': 0.3.8_jutcb7qlybyowtfnkh4vjdkglu
+  '@lexical/selection': 0.3.8_lexical@0.3.8
+  '@lexical/utils': 0.3.8_lexical@0.3.8
   lexical: 0.3.8
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
+  ress: 5.0.2
   sass: 1.54.3
 
 devDependencies:
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.0.0_vite@3.0.4
+  prettier: 2.7.1
   typescript: 4.7.4
   vite: 3.0.4_sass@1.54.3
 
@@ -445,6 +461,23 @@ packages:
       - '@lexical/selection'
     dev: false
 
+  /@lexical/markdown/0.3.8_zusmaiylaflyl2esdbbbls6nfq:
+    resolution: {integrity: sha512-5PCYccbT++In8LHMH6/u9DVFbY1QMGC7gmU63sa1AV8pgK+2zFT+X5gPdwuDpbOertI06t/LBLNAXhi//OP3hQ==}
+    peerDependencies:
+      lexical: 0.3.8
+    dependencies:
+      '@lexical/code': 0.3.8_lexical@0.3.8
+      '@lexical/link': 0.3.8_lexical@0.3.8
+      '@lexical/list': 0.3.8_lexical@0.3.8
+      '@lexical/rich-text': 0.3.8_jutcb7qlybyowtfnkh4vjdkglu
+      '@lexical/text': 0.3.8_lexical@0.3.8
+      '@lexical/utils': 0.3.8_lexical@0.3.8
+      lexical: 0.3.8
+    transitivePeerDependencies:
+      - '@lexical/clipboard'
+      - '@lexical/selection'
+    dev: false
+
   /@lexical/offset/0.3.8_lexical@0.3.8:
     resolution: {integrity: sha512-U1AQyDx28KIZYJQ78hf9oPbcLq3G3HnT8VNIZGjl38uzgfqqdB9CHsMgmS5n8FzAcf+iQWditOKtAFLTT34iLg==}
     peerDependencies:
@@ -504,6 +537,19 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     transitivePeerDependencies:
       - yjs
+    dev: false
+
+  /@lexical/rich-text/0.3.8_jutcb7qlybyowtfnkh4vjdkglu:
+    resolution: {integrity: sha512-TCeaQaJs8AfSafZfn94i7Z+UPOMDNfTwOyjkcoZYY9QE46vPuUV+uhzFZpdJ9U199BPBUOhv8jf9mKDKiBfGqw==}
+    peerDependencies:
+      '@lexical/clipboard': 0.3.8
+      '@lexical/selection': 0.3.8
+      '@lexical/utils': 0.3.8
+      lexical: 0.3.8
+    dependencies:
+      '@lexical/selection': 0.3.8_lexical@0.3.8
+      '@lexical/utils': 0.3.8_lexical@0.3.8
+      lexical: 0.3.8
     dev: false
 
   /@lexical/rich-text/0.3.8_s23h5q5pino77uub2semf67lpe:
@@ -1068,6 +1114,12 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
   /prismjs/1.28.0:
     resolution: {integrity: sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==}
     engines: {node: '>=6'}
@@ -1117,6 +1169,10 @@ packages:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
+
+  /ress/5.0.2:
+    resolution: {integrity: sha512-oHBtOWo/Uc8SzQMbQNIKTcgi8wKmAs7IlNlRywmXudbOtF+c27FlOIq7tnwLDVcTywe6JXYo1pDXHO6kABwNYA==}
+    dev: false
 
   /rollup/2.77.2:
     resolution: {integrity: sha512-m/4YzYgLcpMQbxX3NmAqDvwLATZzxt8bIegO78FZLl+lAgKJBd1DRAOeEiZcKOIOPjxE6ewHWHNgGEalFXuz1g==}
