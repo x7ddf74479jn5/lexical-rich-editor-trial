@@ -1,6 +1,6 @@
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 import { $getSelection, $isRangeSelection, FORMAT_TEXT_COMMAND } from "lexical";
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import {
   MdFormatBold,
   MdFormatUnderlined,
@@ -24,7 +24,7 @@ export const InlineToolbarPlugin: FC = () => {
   const [isSubscript, setIsSubscript] = useState(false);
   const [isSuperscript, setIsSuperscript] = useState(false);
 
-  seEffect(() => {
+  useEffect(() => {
     editor.registerUpdateListener(({ editorState }) => {
       editorState.read(() => {
         const selection = $getSelection();
